@@ -17,7 +17,7 @@ const BrainNote = ({ note }) => {
     const RefLink = width < 768 ? Link : LinkToStacked;
     references = note.inboundReferenceNotes.map((reference) => (
       <RefLink
-        className="no-underline hover:text-gray-700"
+        className="no-underline hover:text-midnight"
         to={reference.slug === 'about' ? `about` : `/${reference.slug}`} // hack
         key={reference.slug}
       >
@@ -33,7 +33,7 @@ const BrainNote = ({ note }) => {
         <>
           <h3>Referred in</h3>
           <div className="mb-4">{references}</div>
-          <hr className="mx-auto w-32" />
+          <hr className="mx-auto w-32 border-mustard" />
         </>
       );
     }
@@ -66,12 +66,12 @@ const BrainNote = ({ note }) => {
         <h1 className="my-4">{note.title}</h1>
         <MDXRenderer>{note.childMdx.body}</MDXRenderer>
       </div>
-      <div className="refs-box bg-indigo-100 text-gray-600 rounded-lg mb-4 p-4">
+      <div className="refs-box bg-ochre text-midnight mb-4 p-4">
         {referenceBlock}
         <p className="text-sm m-0">
           If you think this note resonated, be it positive or negative, send me a{' '}
-          <a href="https://twitter.com/messages/compose?recipient_id=532906019">direct message</a>{' '}
-          on Twitter or an <a href="mailto:bsaaravind+notes@gmail.com">email</a> and we can talk.
+          <a href="https://twitter.com/messages/compose?recipient_id=255562982">direct message</a>{' '}
+          on Twitter or an <a href="mailto:casvanderhoven+ospria@gmail.com">email</a> and we can talk.
         </p>
       </div>
     </MDXProvider>

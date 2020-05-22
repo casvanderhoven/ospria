@@ -3,25 +3,32 @@
 
 body {
   height: 100vh;
+  @apply font-main;
 }
 
 h1 {
-  @apply text-3xl font-bold;
+  @apply text-3xl;
 }
 h2 {
-  @apply text-xl font-bold;
+  @apply text-xl;
 }
 h3 {
-  @apply font-bold;
+  @apply;
 }
 a {
-  @apply text-blue-600 underline;
+  @apply text-ochre underline;
 }
 a:hover {
-  @apply text-blue-700 no-underline;
+  @apply text-ochre no-underline;
+}
+a[href*='//']{
+  @apply text-mustard underline;
+}
+a[href*='//']:hover {
+  @apply text-mustard underline;
 }
 p {
-  @apply mb-4;
+  @apply mb-4 text-midnight;
 }
 
 ul {
@@ -33,14 +40,14 @@ hr {
 }
 
 .refs-box a {
-  @apply text-gray-600;
+  @apply text-midnight;
 }
 
 blockquote {
   @apply py-1 px-4 mb-4 border-l-2 border-blue-500;
 }
 blockquote p {
-  @apply m-0 font-serif text-xl;
+  @apply m-0 font-main text-xl;
 }
 
 code {

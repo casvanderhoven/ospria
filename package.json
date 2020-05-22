@@ -1,5 +1,5 @@
 {
-  "name": "@aravindballa/notes",
+  "name": "@casvanderhoven/ospria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "clean": "gatsby clean"
   },
   "keywords": [],
-  "author": "Aravind Balla <bsaaravind@gmail.com> (https://aravindballa.com)",
+  "author": "Cas van der Hoven <casvanderhoven@gmail.com> (https://casvanderhoven.com)",
   "license": "MIT",
   "dependencies": {
     "@tippyjs/react": "^4.0.2",
